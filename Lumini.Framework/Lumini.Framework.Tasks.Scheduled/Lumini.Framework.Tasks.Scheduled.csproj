@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cauldron.Interception.Fody" Version="2.0.29" />
+    <PackageReference Include="Fody" Version="2.4.1" />
+    <PackageReference Include="ncrontab" Version="3.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lumini.Framework.Tasks\Lumini.Framework.Tasks.csproj" />
+  </ItemGroup>
+
+</Project>
