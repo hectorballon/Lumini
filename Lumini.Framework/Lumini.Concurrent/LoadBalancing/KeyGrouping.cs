@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+using Lumini.Common;
 
 namespace Lumini.Concurrent.LoadBalancing
 {
@@ -17,16 +17,16 @@ namespace Lumini.Concurrent.LoadBalancing
             _groupingKeyDictionary = new Dictionary<TKey, int>();
         }
 
-        public override async Task<bool> SendItemAsync(object expression)
+        public override async Task<int> SendItemAsync(object expression)
         {
             if (!Workers.Any()) throw new Exception("No workers available!");
             if (expression == null) throw new ArgumentNullException(nameof(expression));
             if (!(expression is Expression<Func<TEntity, object>>)) throw new Exception("Expression was expected!");
             var predicate = (Expression<Func<TEntity, object>>)expression;
             var worker = SelectWorker(predicate, out var itemToProcess);
-            if (!worker.CanReceiveItems()) return false;
+            if (!worker.CanReceiveItems()) return -1;
             await worker.ReceiveAsync(itemToProcess);
-            return true;
+            return worker.WorkerId;
         }
 
         protected IWorker SelectWorker(Expression<Func<TEntity, object>> predicate, out TEntity itemToProcess)

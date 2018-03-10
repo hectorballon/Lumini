@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
+using Lumini.Common;
 using Lumini.Concurrent.LoadBalancing;
 using Lumini.Concurrent.Models;
-using Microsoft.Extensions.Logging;
 
 namespace Lumini.Concurrent
 {
 
-    public sealed class LoadBalancingBroker<TLoadBalancer, TEntity> : List<Worker<TEntity>>
+    public class LoadBalancingBroker<TLoadBalancer, TEntity> : List<Worker<TEntity>>
         where TLoadBalancer : class, ILoadBalancer
         where TEntity : class
     {
-        private readonly ILogger _logger;
+        private static ILogger _logger;
 
         public LoadBalancingBroker(ILogger logger, string name, DoWorkDelegate doWork)
             : this(logger, name, doWork, new LoadBalancingSettings())
@@ -45,9 +45,9 @@ namespace Lumini.Concurrent
         {
             try
             {
-                return (TLoadBalancer)Activator.CreateInstance(typeof(TLoadBalancer));
+                return (TLoadBalancer)Activator.CreateInstance(typeof(TLoadBalancer), _logger);
             }
-            catch (Exception)
+            catch (Exception e1)
             {
                 try
                 {
@@ -55,14 +55,14 @@ namespace Lumini.Concurrent
                         .GetConstructor(
                             BindingFlags.NonPublic | BindingFlags.CreateInstance | BindingFlags.Instance,
                             null,
-                            null,
+                            new[] { typeof(ILogger) },
                             null
                         )
-                        .Invoke(new object[] { });
+                        .Invoke(new object[] { _logger });
                 }
                 catch (Exception e)
                 {
-                    _logger.LogError(e, e.ToString());
+                    _logger?.Log(e);
                     throw;
                 }
             }
@@ -84,7 +84,7 @@ namespace Lumini.Concurrent
                 worker.WaitForCompletion();
         }
 
-        public async Task<bool> TrySendItem(object item)
+        public async Task<int> TrySendItem(object item)
         {
             return await LoadBalancer.SendItemAsync(item);
         }

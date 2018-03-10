@@ -1,6 +1,6 @@
 using System;
 using System.Linq;
-using Microsoft.Extensions.Logging;
+using Lumini.Common;
 
 namespace Lumini.Concurrent.LoadBalancing
 {

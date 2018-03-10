@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+using Lumini.Common;
 
 namespace Lumini.Concurrent.LoadBalancing
 {
@@ -16,7 +16,7 @@ namespace Lumini.Concurrent.LoadBalancing
             _logger = logger;
         }
 
-        public virtual async Task<bool> SendItemAsync(object itemToProcess)
+        public virtual async Task<int> SendItemAsync(object itemToProcess)
         {
             try
             {
@@ -25,12 +25,12 @@ namespace Lumini.Concurrent.LoadBalancing
                 var worker = SelectWorker();
                 while (!worker.CanReceiveItems()) Thread.Sleep(2000);
                 await worker.ReceiveAsync(itemToProcess);
-                return true;
+                return worker.WorkerId;
             }
             catch (Exception e)
             {
-                _logger.LogError(e, e.ToString());
-                return false;
+                _logger?.Log(e);
+                return -1;
             }
         }
 

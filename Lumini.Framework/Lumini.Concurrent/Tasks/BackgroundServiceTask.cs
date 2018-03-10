@@ -11,27 +11,24 @@ using TaskStatus = Lumini.Concurrent.Enums.TaskStatus;
 
 namespace Lumini.Concurrent.Tasks
 {
-    public sealed class BackgroundTask<T> : BaseServiceTask
-        where T : IThreadable
+    public class BackgroundServiceTask<T> : BaseServiceTask
+        where T : class
     {
-        public delegate void ConsumeItemHandler(T item);
+        public delegate void ItemAvailableDelegate(T item);
 
-        private readonly ActionBlock<T> _consumerBlock;
-        private readonly int _idleTimeInSeconds;
-        private readonly Dictionary<int, TaskEventWaitHandle> _loopWaitHandleList;
-        private readonly IPropagatorBlock<T, T> _propagationBlock;
+        private ActionBlock<T> _consumerBlock;
+        private IPropagatorBlock<T, T> _propagationBlock;
 
-        public BackgroundTask(string name, int idleTimeinSeconds = 10) : base(name)
+        private readonly Dictionary<int, TaskEventWaitHandle> _itemAvailableSignalList;
+
+        public BackgroundServiceTask(IServiceConfiguration configuration)
+            : base(configuration)
         {
-            _idleTimeInSeconds = idleTimeinSeconds;
-            _loopWaitHandleList = new Dictionary<int, TaskEventWaitHandle>();
-            _consumerBlock = new ActionBlock<T>(item => { OnItemAvailable?.Invoke(item); });
-            _propagationBlock = CreatePropagationBlock();
-            _propagationBlock.LinkTo(_consumerBlock, new DataflowLinkOptions { PropagateCompletion = true });
+            _itemAvailableSignalList = new Dictionary<int, TaskEventWaitHandle>();
         }
 
         public Func<T> GetNextItem { get; set; }
-        public event ConsumeItemHandler OnItemAvailable;
+        public event ItemAvailableDelegate OnItemAvailable;
 
         public PrioritizedQueue<T> AddPrioritizedQueue(string name, ushort priority = ushort.MaxValue)
         {
@@ -40,11 +37,14 @@ namespace Lumini.Concurrent.Tasks
 
         internal void AddResetEvent(TaskEventWaitHandle resetEvent)
         {
-            _loopWaitHandleList.Add(_loopWaitHandleList.Count, resetEvent);
+            _itemAvailableSignalList.Add(_itemAvailableSignalList.Count, resetEvent);
         }
 
         protected override async Task StartTask(CancellationToken token)
         {
+            _consumerBlock = new ActionBlock<T>(item => { OnItemAvailable?.Invoke(item); });
+            _propagationBlock = CreatePropagationBlock();
+            _propagationBlock.LinkTo(_consumerBlock, new DataflowLinkOptions { PropagateCompletion = true });
             await DoWork(token);
         }
 
@@ -57,7 +57,7 @@ namespace Lumini.Concurrent.Tasks
                 var waitHandleArray = GetLocalCopyOfAvailableWaitHandleList(token);
                 var eventThatSignaledIndex =
                     WaitHandle.WaitAny(waitHandleArray,
-                        new TimeSpan(0, 0, _idleTimeInSeconds));
+                        new TimeSpan(0, 0, Settings.IdleTimeInMilliseconds));
 
                 if (token.IsCancellationRequested)
                 {
@@ -86,7 +86,7 @@ namespace Lumini.Concurrent.Tasks
         private WaitHandle[] GetLocalCopyOfAvailableWaitHandleList(CancellationToken token)
         {
             var localCopy = new List<WaitHandle>();
-            localCopy.AddRange(_loopWaitHandleList.OrderBy(i => i.Value.Priority).ThenBy(i => i.Key)
+            localCopy.AddRange(_itemAvailableSignalList.OrderBy(i => i.Value.Priority).ThenBy(i => i.Key)
                 .Select(t => t.Value));
             localCopy.Add(token.WaitHandle);
             var waitHandleArray = new WaitHandle[localCopy.Count];
@@ -105,7 +105,7 @@ namespace Lumini.Concurrent.Tasks
                 await _propagationBlock.SendAsync(item, token);
         }
 
-        private static IPropagatorBlock<T, T> CreatePropagationBlock()
+        protected virtual IPropagatorBlock<T, T> CreatePropagationBlock()
         {
             var delay = TimeSpan.FromMilliseconds(1000);
             var lastItem = DateTime.MinValue;

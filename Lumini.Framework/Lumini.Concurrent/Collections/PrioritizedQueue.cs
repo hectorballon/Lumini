@@ -6,12 +6,12 @@ using Lumini.Concurrent.Tasks;
 namespace Lumini.Concurrent.Collections
 {
     public class PrioritizedQueue<T> : WaitHandle
-        where T : IThreadable
+        where T : class
     {
         private readonly Queue<T> _queue = new Queue<T>();
         private readonly TaskEventWaitHandle _itemWasReceivedSignal;
 
-        internal PrioritizedQueue(string resetEventName, BackgroundTask<T> serviceTask, ushort priority)
+        internal PrioritizedQueue(string resetEventName, BackgroundServiceTask<T> serviceTask, ushort priority)
         {
             _itemWasReceivedSignal = new TaskEventWaitHandle(false, resetEventName, priority);
             SafeWaitHandle = _itemWasReceivedSignal.SafeWaitHandle;

@@ -13,13 +13,15 @@ namespace Lumini.Concurrent.Tasks
     {
         private ManualResetEvent _runSyncEvent;
 
-        protected BaseServiceTask(string name)
+        protected BaseServiceTask(IServiceConfiguration configuration)
         {
-            Name = name;
+            Settings = configuration;
             Status = TaskStatus.NotStarted;
         }
 
-        public string Name { get; }
+        public IServiceConfiguration Settings { get; }
+
+        public string Name => $"{GetType().Name}: {Settings.Name}";
 
         public virtual async Task Start(CancellationToken token)
         {

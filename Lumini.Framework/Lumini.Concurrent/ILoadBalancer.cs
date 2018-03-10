@@ -6,6 +6,6 @@ namespace Lumini.Concurrent
     public interface ILoadBalancer
     {
         LinkedList<IWorker> Workers { get; }
-        Task<bool> SendItemAsync(object itemToProcess);
+        Task<int> SendItemAsync(object itemToProcess);
     }
 }

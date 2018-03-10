@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Microsoft.Extensions.Logging;
+using Lumini.Common;
 
 namespace Lumini.Concurrent.LoadBalancing
 {
