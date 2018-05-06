@@ -1,0 +1,11 @@
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\bin\Release\netcoreapp2.0\Lumini.Framework.Dataflow.deps.json
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\bin\Release\netcoreapp2.0\Lumini.Framework.Dataflow.dll
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\bin\Release\netcoreapp2.0\Lumini.Framework.Dataflow.pdb
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\bin\Release\netcoreapp2.0\Lumini.Framework.Common.dll
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\bin\Release\netcoreapp2.0\Lumini.Framework.Common.pdb
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\obj\Release\netcoreapp2.0\Lumini.Framework.Dataflow.csprojResolveAssemblyReference.cache
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\obj\Release\netcoreapp2.0\Lumini.Framework.Dataflow.csproj.CoreCompileInputs.cache
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\obj\Release\netcoreapp2.0\Lumini.Framework.Dataflow.AssemblyInfoInputs.cache
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\obj\Release\netcoreapp2.0\Lumini.Framework.Dataflow.AssemblyInfo.cs
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\obj\Release\netcoreapp2.0\Lumini.Framework.Dataflow.dll
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Dataflow\obj\Release\netcoreapp2.0\Lumini.Framework.Dataflow.pdb

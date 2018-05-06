@@ -1,0 +1,15 @@
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\bin\Debug\netstandard2.0\Lumini.Concurrent.deps.json
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\bin\Debug\netstandard2.0\Lumini.Concurrent.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\bin\Debug\netstandard2.0\Lumini.Concurrent.pdb
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\bin\Debug\netstandard2.0\Lumini.Common.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\bin\Debug\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\bin\Debug\netstandard2.0\System.Threading.Tasks.Dataflow.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\bin\Debug\netstandard2.0\Lumini.Common.pdb
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\bin\Debug\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.xml
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\bin\Debug\netstandard2.0\System.Threading.Tasks.Dataflow.xml
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\obj\Debug\netstandard2.0\Lumini.Concurrent.csprojResolveAssemblyReference.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\obj\Debug\netstandard2.0\Lumini.Concurrent.csproj.CoreCompileInputs.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\obj\Debug\netstandard2.0\Lumini.Concurrent.AssemblyInfoInputs.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\obj\Debug\netstandard2.0\Lumini.Concurrent.AssemblyInfo.cs
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\obj\Debug\netstandard2.0\Lumini.Concurrent.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Concurrent\obj\Debug\netstandard2.0\Lumini.Concurrent.pdb

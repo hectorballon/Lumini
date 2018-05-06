@@ -1,0 +1,13 @@
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\bin\Debug\netstandard2.0\Lumini.Scheduled.deps.json
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\bin\Debug\netstandard2.0\Lumini.Scheduled.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\bin\Debug\netstandard2.0\Lumini.Scheduled.pdb
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\bin\Debug\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\bin\Debug\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.xml
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\obj\Debug\netstandard2.0\Lumini.Scheduled.csprojResolveAssemblyReference.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\obj\Debug\netstandard2.0\Lumini.Scheduled.csproj.CoreCompileInputs.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\obj\Debug\netstandard2.0\Lumini.Scheduled.AssemblyInfoInputs.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\obj\Debug\netstandard2.0\Lumini.Scheduled.AssemblyInfo.cs
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\obj\Debug\netstandard2.0\Lumini.Scheduled.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Scheduled\obj\Debug\netstandard2.0\Lumini.Scheduled.pdb

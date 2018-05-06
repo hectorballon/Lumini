@@ -1,0 +1,17 @@
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Common\bin\Debug\netcoreapp2.0\Lumini.Framework.Common.deps.json
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Common\bin\Debug\netcoreapp2.0\Lumini.Framework.Common.dll
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Common\bin\Debug\netcoreapp2.0\Lumini.Framework.Common.pdb
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.csproj.CoreCompileInputs.cache
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.AssemblyInfoInputs.cache
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.AssemblyInfo.cs
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.dll
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.pdb
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Framework.Common\bin\Debug\netcoreapp2.0\Lumini.Framework.Common.deps.json
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Framework.Common\bin\Debug\netcoreapp2.0\Lumini.Framework.Common.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Framework.Common\bin\Debug\netcoreapp2.0\Lumini.Framework.Common.pdb
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.csprojResolveAssemblyReference.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.csproj.CoreCompileInputs.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.AssemblyInfoInputs.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.AssemblyInfo.cs
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Framework.Common\obj\Debug\netcoreapp2.0\Lumini.Framework.Common.pdb

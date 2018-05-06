@@ -1,0 +1,11 @@
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\bin\Release\netcoreapp2.0\Lumini.Framework.Tasks.deps.json
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\bin\Release\netcoreapp2.0\Lumini.Framework.Tasks.dll
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\bin\Release\netcoreapp2.0\Lumini.Framework.Tasks.pdb
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\bin\Release\netcoreapp2.0\Lumini.Framework.Common.dll
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\bin\Release\netcoreapp2.0\Lumini.Framework.Common.pdb
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\obj\Release\netcoreapp2.0\Lumini.Framework.Tasks.csproj.CoreCompileInputs.cache
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\obj\Release\netcoreapp2.0\Lumini.Framework.Tasks.AssemblyInfoInputs.cache
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\obj\Release\netcoreapp2.0\Lumini.Framework.Tasks.AssemblyInfo.cs
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\obj\Release\netcoreapp2.0\Lumini.Framework.Tasks.dll
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\obj\Release\netcoreapp2.0\Lumini.Framework.Tasks.pdb
+E:\workspaces\visual.studio\personal\Lumini.Framework\Lumini.Framework.Tasks\obj\Release\netcoreapp2.0\Lumini.Framework.Tasks.csprojResolveAssemblyReference.cache

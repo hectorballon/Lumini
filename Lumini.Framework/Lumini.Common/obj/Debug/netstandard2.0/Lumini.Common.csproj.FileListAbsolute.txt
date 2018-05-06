@@ -1,0 +1,9 @@
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Common\bin\Debug\netstandard2.0\Lumini.Common.deps.json
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Common\bin\Debug\netstandard2.0\Lumini.Common.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Common\bin\Debug\netstandard2.0\Lumini.Common.pdb
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Common\obj\Debug\netstandard2.0\Lumini.Common.csprojResolveAssemblyReference.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Common\obj\Debug\netstandard2.0\Lumini.Common.csproj.CoreCompileInputs.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Common\obj\Debug\netstandard2.0\Lumini.Common.AssemblyInfoInputs.cache
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Common\obj\Debug\netstandard2.0\Lumini.Common.AssemblyInfo.cs
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Common\obj\Debug\netstandard2.0\Lumini.Common.dll
+E:\workspaces\visual.studio\personal\Lumini\Lumini.Framework\Lumini.Common\obj\Debug\netstandard2.0\Lumini.Common.pdb
